@@ -1,0 +1,31 @@
+<DOCTYPE HTML>
+    <html lang="PT-BR">
+        <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Imagens Dinâmicas</title>
+        </head>
+        <body>
+            <h1>Imagens Dinâmicas</h1>
+            <p>Para adicionar imagens dinâmicas no seu site, é necessário usar a tag <strong>&lt;picture&gt;</strong>. <br>
+                Dentro desta tag coloque a tag &lt;img&gt; normalmente e adicione a imagem que você deseja para o seu site. <br>
+                E dentro da tag picture acima da tag img, você adiciona a tag <strong>&gt;source&lt;</strong>.
+                Dentro da tag source você vai indicar os parâmetros <strong>media, type e srcset</strong>. <br>
+                <dl>
+                    <dt>Media</dt>
+                    <dd>Em media você vai adicionar a largura do site necessária para que se troque a imagem.</dd>
+                    <dt>Type</dt>
+                    <dd>Em type você vai adicionar o image/ o tipo da imagem (png,jpg, etc.)</dd>
+                    <dt>Srcset</dt>
+                    <dd>Em srcset você vai colocar o arquivo da imagem, igualmente na tag img.</dd>
+                </dl>
+                Lembrando: Você deve colocar o código da menor imagem em cima e assim sucessivamente. Dentro da tag img você vai colocar a imagem que você quer que esteja por padrão. 
+            </p>
+            <h2>Exemplo</h2>
+            <picture>
+                <source media="(max-width:500px)" srcset="imagens/pequena.png" type="image/png">
+                <source media="(max-width:1000px)" srcset="imagens/medio.png" type="image/png">
+                <img src="imagens/grande.png" alt="Imagem Escolhida">
+            </picture>
+        </body>
+    </html>
