@@ -1,0 +1,6 @@
+/*Configuração Global das CSS*/
+body {
+    background-image: linear-gradient(to right,#80621C,#806D42 30%); 
+    color:#FFC438 ;
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
