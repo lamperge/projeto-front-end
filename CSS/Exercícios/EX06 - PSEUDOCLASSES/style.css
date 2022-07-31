@@ -1,0 +1,33 @@
+div {
+    height: 15em;
+    width: 15em;
+    display: inline-block;
+    border:2px solid orangered;
+    text-align: center;
+}
+
+div:hover {
+    background-color: yellowgreen;
+    color: cornflowerblue;
+}
+
+.d1 {
+    background-color: black;
+    color: white;
+}
+
+.d2 {
+    background-color: gray;
+    color: black;
+    font-weight: 700;
+}
+
+.d3 {
+    background-color: lightseagreen;
+    color: chocolate;
+    font-weight: 700;
+}
+
+.d3:hover {
+    background-color: blueviolet;
+} 

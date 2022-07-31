@@ -1,0 +1,32 @@
+#principal {
+    background-color: crimson;
+    text-align: center;
+    font-size: 3em;
+    color: aliceblue;
+}
+.primario {
+    background-color: coral;
+    text-align: center;
+    font-size: 2em;
+    color: aliceblue;
+}
+.secundario {
+    background-color: burlywood;
+    text-align: center;
+    font-size: 2em;
+    color: aliceblue;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+body {
+    background-image: linear-gradient( to bottom, lightblue, rgb(49, 49, 160));
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
