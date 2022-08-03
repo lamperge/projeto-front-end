@@ -1,0 +1,49 @@
+body {
+    margin: auto;
+    background-color: grey;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+header {
+    background-color: black;
+}
+header > h1 {
+    color: white;
+    text-align: center;
+    font-size: 3em;
+}
+header > h1:hover {
+    color:blueviolet
+}
+header > nav > a { 
+    text-decoration: none;
+    color: gray;
+    font-size: 2em;
+    margin: 10px;
+}
+header > nav > a:hover {
+    color:yellow
+}
+header > nav {
+    text-align: center;
+}
+main {
+    background-color: beige;
+    height: auto;
+    width: 1200px;
+    margin: 50px 50px 50px 50px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 700;
+    padding: 10px;
+}
+
+footer {
+    background-color:coral;
+    text-align: center;
+    height: 50px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+footer:hover {
+    color: beige;
+}

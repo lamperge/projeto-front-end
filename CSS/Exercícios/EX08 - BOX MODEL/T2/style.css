@@ -1,0 +1,19 @@
+#bloco {
+    background-color: lightskyblue;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    border: solid 20px black ;
+    padding: 50px;
+}
+
+#bloco:hover {
+    background-color: blue;
+    color: aliceblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: dotted 10px green;
+}
+
