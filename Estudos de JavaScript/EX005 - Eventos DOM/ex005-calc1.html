@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input {
+            height: 30px;
+        }
+        
+        .res {
+            margin-top: 10px;
+        }
+
+        .bucetossaura {
+            border-radius: 10px;
+        }
+        .bucetossaura:hover {
+            background-color: aqua;
+            transition-duration: 0.5s;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <input type="number" name="n1" class="txtn1">
+    <input type="number" name="n2" class="txtn2">
+    <input type="button" value="+" onclick="soma()" class="bucetossaura">
+    <div class="res">
+        <strong>Resultado</strong>
+    </div>
+</body>
+<script>
+    function soma() {
+        var num1 = window.document.querySelector ('input.txtn1')
+        var num2 = window.document.querySelector ('input.txtn2')
+        var r = window.document.querySelector ('div.res')
+        var n1 = Number(num1.value)
+        var n2 = Number(num2.value)
+        var s = n1 + n2 
+        r.innerHTML = `O resultado é <strong>${s}</strong>`
+    }
+</script>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .area {
+            background-color: blue;
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            line-height: 300px;
+            font-weight: bold;
+            font-size: 1.3em;
+            margin-left: 520px;
+            margin-top: 100px;
+            border-radius: 20%;
+            color: white;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="area" onclick="clicar ()" onmouseover="entrar()" onmouseout="sair()">Área interativa</div>
+</body>
+<script>
+    function clicar () {
+        var area = document.querySelector ('div.area')
+        area.innerHTML = 'Você clicou no quadrado'
+        area.style.background = '#F52D05'
+    }
+
+    function entrar () {
+        var area = document.querySelector ('div.area')
+        area.innerHTML = 'Você entrou no quadrado'
+        area.style.background = 'gray'
+    }
+
+    function sair () {
+        var area = document.querySelector ('div.area')
+        area.innerHTML = 'Área interativa'
+        area.style.background = 'blue' 
+    }
+</script>
+</html>

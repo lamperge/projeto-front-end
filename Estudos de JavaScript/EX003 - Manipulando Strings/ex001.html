@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: chocolate;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin-top: 15%;
+            font-size: 2.5em;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = String (window.prompt('Qual é o seu nome?'))
+        var idade = Number (window.prompt('Quantos anos você tem?'))
+        var nota = Number (window.prompt('Qual nota você tirou?'))
+        document.write (`O seu nome é <strong>${nome}</strong> tem ${idade} anos e tirou nota ${nota} <br>`) 
+        document.write (`A soma da sua <em>idade</em> com sua <em>nota</em> é <strong>${idade + nota}</strong>!` )
+    </script>
+</body>
+</html>

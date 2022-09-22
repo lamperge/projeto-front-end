@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bloco {
+            background-color: rgb(24, 93, 185);
+            height: 200px;
+            width: 200px;
+            text-align: center;
+            line-height: 200px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <div class="bloco" onclick = 'fclic ()' >
+        <strong>ação clicar</strong>
+    </div>
+    <script>
+        function fclic () {
+            var a = window.document.querySelector ('div.bloco')
+            a.style.background = 'green'
+            a.innerHTML = '<strong>clicou<strong>'
+        }
+    </script>
+</body>
+</html>
