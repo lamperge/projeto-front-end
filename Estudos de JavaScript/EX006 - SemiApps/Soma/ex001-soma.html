@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Soma entre dois números</h1>
+    <p style="margin-bottom:20px;">Adicione dois números e clique em <strong>"somar"</strong> para obter um resultado</p>
+    <input type="text" class="num1  "> +
+    <input type="text" class="num2"> </BR>
+    <button class="botao"> SOMAR </button>
+    <div class="resultado"></div>
+</body>
+<script>
+    botao = document.querySelector ('button.botao')
+    botao.addEventListener ("click", somar)
+    function somar () {
+        input1 = document.querySelector ("input.num1")
+        input2 = document.querySelector ('input.num2')
+        res = document.querySelector ('div.resultado')
+        num1 = Number (input1.value)
+        num2 = Number (input2.value)
+        res.innerHTML = `A soma entre o número <strong>${num1}</strong> mais o número <strong>${num2}</strong> é <strong>${num1 + num2}</strong>`
+    }
+</script>
+</html>

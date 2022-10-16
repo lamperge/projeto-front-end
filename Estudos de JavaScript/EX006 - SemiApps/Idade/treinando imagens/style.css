@@ -1,0 +1,14 @@
+body {
+    text-align: center;
+    margin-top: 200px;
+}
+.botao {
+    font-weight: bold;
+}
+.botao:active {
+    background-color: yellow;
+}
+
+.imagens {
+    padding: 20px;
+}

@@ -1,0 +1,29 @@
+@charset 'UTF-8';
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+div {
+    border: 2px solid black;
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+}
+
+.b1 {
+    background-color: skyblue;
+    margin-left: 320px;
+}
+
+.b2 {
+    background-image: url('imagens/pattern001.png');
+}
+
+.b3 {
+    background-image: url('imagens/pattern003.png');
+}
+
+body {
+    background-image: url('imagens/pattern004.png');
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 200px;
+        }
+
+        button {
+            width: 150px;
+            height: 30px;
+            font-size: 1.3em;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Para qual lado você quer ir?</h1>
+    <button class="esquerda">Esquerda</button>
+    <button class="direita">Direita</button>
+    <div class="res"></div>
+
+</body>
+<script>
+    var besq = document.querySelector ('button.esquerda')
+    var bdir = document.querySelector ('button.direita')
+    var res = document.querySelector ('div.res')
+    bdir.addEventListener ('click', bolso)
+    besq.addEventListener ('click', lula)
+
+    function bolso (){
+        res.innerHTML = '<img src="../EX007 - Condições/OdW70rbO_400x400.jpg" alt="">'
+    }
+    function lula (){
+        res.innerHTML = '<img src="../EX007 - Condições/gOAhmKxr_400x400.jpg" alt="">'
+    }
+</script>
+</html>

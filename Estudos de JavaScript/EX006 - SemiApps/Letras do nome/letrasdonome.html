@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letras do nome</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Escreva seu nome:</h1>
+    <p>A máquina vai dizer quantas letras ele tem.</p>
+    <p class="ideia">Ideia: pesquise o nome completo de Dom Pedro II no google e coloque aqui.</p>
+    <input type="text" class="input"> <br>
+    <button class="butao">Quantas letras tem esse nome?</button> <br>
+    <div class="resultado"></div>
+</body>
+<script>
+    var botao = document.querySelector ('button.butao')
+    botao.addEventListener ('click', numnome)
+    function numnome() {
+        var input = document.querySelector ('input.input')
+        var nome = input.value
+        var resultado = document.querySelector ('div.resultado')
+        resultado.innerHTML = `O seu nome <strong>${nome}</strong> tem ${nome.length} letras! `
+    }
+</script>
+</html>

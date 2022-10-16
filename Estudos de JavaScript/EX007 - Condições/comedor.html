@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 200px;
+        }
+
+        button {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quantas meninas tu já comeu?</h1>
+    <input type="text" class="input"> 
+    <button class="botao">Testar</button>
+    <div class="res"></div>
+</body>
+<script>
+    var botao = document.querySelector ('button.botao')
+    botao.addEventListener ('click', resultado)
+
+    function resultado () {
+        var res = document.querySelector ('div.res')
+        var input = document.querySelector ('input.input')
+        var vlrinput = input.value 
+        if (vlrinput < 1)
+        {res.innerHTML = 'Virgem'}
+        if (vlrinput >= 1 && vlrinput < 4)
+        {res.innerHTML = 'bom... já é um começo'}
+        if (vlrinput >= 4 && vlrinput <15)
+        {res.innerHTML = 'Experiente ein, galanteador'}
+        if (vlrinput >=15 && vlrinput <100)
+        {res.innerHTML = 'Uma máquina de sexo, procriador nato!'}
+        if (vlrinput >=100)
+        {res.innerHTML = '<img src="../EX007 - Condições/comedordecondominio.png" alt="">'}
+    }
+</script>
+</html>

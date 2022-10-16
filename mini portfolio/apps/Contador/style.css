@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+body {
+    background-color:#228B22;
+    font-family: 'rubik', sans-serif;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+}
+
+.conteiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    background-color: white;
+    height: 450px;
+    width: 800px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px gray;
+    color: black;
+    text-align: left;
+    padding: 50px;
+    font-size: 2em;
+}
+
+input {
+    width: 150px;
+    height: 35px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    text-align: center;
+    margin: 10px;
+}
+
+.botao {
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    background-color:#4AD94A ;
+    font-size: 0.8em;
+    font-family: 'rubik', sans-serif;
+    color: white;
+    font-weight: 500;
+}
+.botao:hover {
+    background-color: #228C22;
+}
+.botao:active {
+    background-color: #155915;
+    color: black;
+}
+
+.res {
+    font-size: 0.9em;
+    margin-top: 10px;
+    text-align: center;
+}

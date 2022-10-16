@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Escreva seu nome abaixo:</h1>
+    <input type="text" name="nome" id="name"> <br>
+    <input type="button" value='aplicar' class="botao">
+    <div class="exibirres"></div>
+</body>
+<script>
+
+    function numletras () {
+        var nome = window.document.querySelector ('input#name')
+        var resultado = document.querySelector ('div.exibirres')
+        var nomevalor = (nome.value)
+        resultado.innerHTML = `O seu nome é <strong>${nomevalor}</strong> e possui ${nomevalor.length} letras! `
+    }
+    var botao = document.querySelector ('input.botao')
+    botao.addEventListener ('click', numletras)
+    
+</script>
+</html>

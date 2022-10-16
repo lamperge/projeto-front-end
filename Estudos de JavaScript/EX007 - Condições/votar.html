@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 200px;
+            background-color:palegreen;
+        }
+        input {
+            height: 60px;
+            width: 70px;
+            font-size: 1.5em;
+            border: solid 2px;
+            text-align: center;
+            border-radius: 10px;
+            margin-top: 5px;
+        }
+
+        .botao {
+            margin-top: 6px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: white;
+            background-color: limegreen;
+            border-radius: 10px;
+            height: 30px;
+            width: 70px;
+        }
+
+        .botao:hover {
+            background-color: darkgreen;
+        }
+
+        .botao:active {
+            background-color: cornflowerblue;
+            color: black;
+        }
+
+        .res {
+            margin-top: 10px;
+            width:500px;
+            display: inline-block;
+            font-weight: 600;
+            background-color:palegreen;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Coloque sua idade abaixo:</h1>
+    <input type="number" class="input"> <br>
+    <button class="botao">VOTAR</button> <br>
+    <div class="res"></div>
+</body>
+<script>
+    botao = document.querySelector ('button.botao')
+    botao.addEventListener ('click', votar)
+
+    function votar () {
+        var input = document.querySelector ('input.input')
+        var valor = input.value
+        var res = document.querySelector ('div.res')
+        if (valor >= 18 && valor < 65)
+        {res.innerHTML = 'Você tem o dever de comparecer a votação no dia 2', res.style.background = 'yellowgreen' }
+        else if (valor >= 16 && valor <=17 || valor >= 65)
+        {res.innerHTML = 'Voto opcional', res.style.background = 'yellowgreen' }
+        else if (valor <= 15)
+        {res.innerHTML = 'Você não idade para participar da festa da democracia', res.style.background = 'yellowgreen' } 
+    }
+</script>
+</html>

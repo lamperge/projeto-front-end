@@ -1,0 +1,20 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: darkslategrey;
+    font-weight: 600;
+    margin-top: 200px;
+
+}
+
+button {
+    margin: 10px;
+    height: 30px;
+    width: 80px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+button:active {
+    background-color:chocolate;
+}

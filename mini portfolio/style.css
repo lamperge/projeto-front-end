@@ -1,0 +1,73 @@
+/*font-family: 'Rubik', sans-serif; */
+/*font-family: 'Bree Serif', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Rubik:wght@400;500;600&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Rubik', sans-serif;
+}
+
+body  {
+    color: white;
+    text-align: center;
+    background-color: #C9D2FF;
+}
+
+#memoji {
+    margin: 0px;
+}
+
+#tprincipal {
+    color: white;
+    font-size: 1.8em;
+    font-weight:500;
+    padding: 5vh;
+}
+
+.conteiner {
+    height: 80vh;
+    width: 80vh;
+    margin: 5vh auto;
+    border-radius: 5vh;
+    background-color: #7D93FF;
+    text-align: center;
+}
+
+
+.botoes {
+ text-align: center;
+}
+
+button {
+    height: 42px;
+    width: 150px;
+    font-size: 1em;
+    border-radius: 20px;
+    font-weight: 500;
+    border: none;
+    font-size: 1.2em;
+    background-color: rgb(235, 233, 233);
+    margin: 1vh 1vh 3vh 3vh ;
+}
+
+button:hover {
+    background-color: #ffd24d;
+    transition-duration: 0.5s;
+}
+
+button:active {
+    background-color: #B38F22;
+    transition-duration: 0.05s;
+}
+
+footer {
+    margin: 10vh;
+    height: 1vh;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

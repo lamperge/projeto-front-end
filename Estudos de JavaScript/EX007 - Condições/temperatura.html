@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termometro</title>
+</head>
+<body>
+    <h1>Termômetro:</h1> 
+    <input type="number" class="entrada"> Cº <br>
+    <button class="calc">Calcular</button>
+    <div class="res"></div>
+</body>
+<script>
+    botao = document.querySelector ('button.calc')
+    botao.addEventListener ('click', calcular)
+
+    function calcular () {
+        input = document.querySelector ('input.entrada')
+        temper = input.value 
+        resultado = document.querySelector ('div.res')
+
+        if (temper < 35.4)
+        {resultado.innerHTML = `Você pode estar tendo uma hipotermia, procure um médico.`}
+        else if (temper <= 35.4 && temper >= 37.4 )
+        {resultado.innerHTML = `Sua temperatura está regular`}
+        else if (temper > 37.4)
+        {resultado.innerHTML = `Você pode estar com febre, procure um médico.`}
+    }
+</script>
+</html>

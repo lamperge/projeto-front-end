@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .res {
+            margin-top: 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Coloque sua altura abaixo:</h1>
+    <input type="text" class="input"> <button class="botao">OK</button>
+    <div class="res"></div>
+</body>
+<script>
+    var botao = document.querySelector ('button.botao')
+    botao.addEventListener ('click', altr)
+
+  function altr () {
+        var input = document.querySelector ('input.input')
+        var valordoinput = input.value
+        var resultado = document.querySelector ('div.res')
+        if (valordoinput <= 1.5)
+        {resultado.innerHTML = `Anão`}
+        if (valordoinput >= 1.5 && valordoinput <=1.7 )
+        {resultado.innerHTML = `Baixo`}
+        if (valordoinput >= 1.7 && valordoinput <=1.8 )
+        {resultado.innerHTML = `Médio`}
+        if (valordoinput >= 1.8 && valordoinput <=1.9 )
+        {resultado.innerHTML = `Alto`}
+        if (valordoinput >= 1.9 && valordoinput <=2 )
+        {resultado.innerHTML = `Basqueteiro`}
+        if (valordoinput >= 2)
+        {resultado.innerHTML = 'Genôrmico'}
+        if (valordoinput >=2.5)
+        {resultado.innerHTML = "Você é mesmo um ser humano?"}
+    }
+</script>
+</html>

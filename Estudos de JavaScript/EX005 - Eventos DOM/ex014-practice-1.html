@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Escreva seu nome:</h1>
+    <input type="text" class="lindomar">
+    <input type="button" value="juliano" class='maranata' onclick="bruno()">
+    <div class="rafael"></div>
+</body>
+<script>
+    function bruno () {
+        var a = document.querySelector ('input.lindomar')
+        var b = document.querySelector ('input.maranata')
+        var c = document.querySelector ('div.rafael')
+        var valor = (a.value)
+        c.innerHTML = `O seu nome é ${valor} e tem ${valor.length} letras.`
+    }
+</script>
+</html>

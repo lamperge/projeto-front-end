@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: teal;
+            color:black;
+            text-align: center;
+            margin-top: 200px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .input {
+            width: 200px;
+            height: 30px;
+            border-radius: 10px;
+            border: solid 2px;
+            font-size: 1.3em;
+            margin-top: -5px;
+        }
+
+        .botao1 {
+            margin-top: 10px;
+            font-size: 1.3em;
+            background-color: tomato;
+            color: white;
+            font-weight: 600;
+            border-radius: 15px;
+        }
+
+        .botao1:hover {
+            background-color: brown;
+            color:black;
+        }
+
+        .botao1:active {
+            background-color: limegreen;
+            color: white;
+        }
+        .botao2 {
+            margin-top: 10px;
+            font-size: 1.3em;
+            background-color: tomato;
+            color: white;
+            font-weight: 600;
+            border-radius: 15px;
+        }
+
+        .botao2:hover {
+            background-color: brown;
+            color:black;
+        }
+
+        .botao2:active {
+            background-color: limegreen;
+            color: white;
+        }
+
+        .resultado {
+            background-color: limegreen;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-top: 5px;
+            width: 300px;
+            color: white;
+            text-align: center;
+            display: inline-block;
+            font-weight: 800;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Escreva seu nome:</h1>
+    <input type="text " class="input"> <br>
+    <button class="botao1">Meu nome em maiúsculas</button>
+    <button class="botao2">Meu nome em minúsculas</button> <br>
+    <div class="resultado"></div>
+</body>
+<script>
+    var botao = document.querySelector ('button.botao1')
+    botao.addEventListener ('click', transmaiu)
+    var botao = document.querySelector ('button.botao2')
+    botao.addEventListener ('click', transminu)
+
+    function transminu () {
+        var input = document.querySelector ('input.input')
+        var nome = input.value
+        var resultado = document.querySelector ('div.resultado')    
+        var minu = nome.toLowerCase ()
+        resultado.innerHTML = `O seu nome em letras maiúsculas é ${minu}`  
+}
+
+    function transmaiu () {
+        var input = document.querySelector ('input.input')
+        var nome = input.value
+        var resultado = document.querySelector ('div.resultado')
+        var maiu = nome.toUpperCase ()
+        resultado.innerHTML = `O seu nome em letras maiúsculas é ${maiu}` 
+}
+</script>
+</html>

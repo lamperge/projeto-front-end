@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Escreva teu nome:</h1>
+    <input type="text" class="input">
+    <button class="botao" onclick="escrevernome()">x</button>
+    <div class="exibirresultado"></div>
+</body>
+<script>
+    function escrevernome () {
+        var capinput = document.querySelector ('input.input')
+        var capbotao = document.querySelector ('button.botao')
+        var resultado = document.querySelector ('div.exibirresultado')
+        var valordoinput = capinput.value
+        resultado.innerHTML = `O seu nome é ${valordoinput} e tem ${valordoinput.length} letras.`
+    }
+</script>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .area {
+            width: 200px;
+            height: 200px;
+            border: black solid 3pt;
+            line-height: 200px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="area">Ação clicar</div>
+</body>
+<script>
+        troca = document.querySelector ('div.area')
+        troca.addEventListener ('click', trocar)
+        troca.addEventListener ('mouseout', sair)
+
+    function trocar () {    
+        troca.style.background = 'green'
+        troca.innerHTML = 'foi clicado' 
+    }
+
+    function sair () {
+
+    }
+
+</script>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Escreva seu nome:</h1>
+    <input type="text" class="rodney">
+    <button class="franklin" onclick="barra()">x</button>
+    <div class="moura"></div>
+</body>
+<script>
+    function barra () {
+        a = document.querySelector ('input.rodney')
+        b = document.querySelector ('input.franklin')
+        c = document.querySelector ('div.moura')
+        valordea = a.value
+        c.innerHTML = `o seu nome é ${valordea} e tem ${valordea.length} letras.`
+    }
+</script>
+</html>

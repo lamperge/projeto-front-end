@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:darkslateblue;
+    margin-top: 200px;
+    color: white;
+}
+
+.res {
+    padding: 20px;
+}

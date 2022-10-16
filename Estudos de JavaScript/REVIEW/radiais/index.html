@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 200px;
+        }
+
+        input {
+            height: 40px;
+            width: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Radiais</h1>
+    <input type="radio" name="a" id="1" checked> 1
+    <input type="radio" name="a" id="2"> 2
+    <input type="radio" name="a" id="3"> 3
+    <div class="res"></div>
+    <button class="b">aaa
+    </button>
+</body>
+<script>
+    bt = document.querySelector ('button.b')
+    bt.addEventListener ('click', w)
+   function w () { 
+    radio = document.getElementsByName ('a')
+    res = document.querySelector ('div.res')
+    if (radio[0].checked)
+    {res.innerHTML = 'Olá mundo'}
+    else {res.innerHTML ='Ola bundo!'} }
+</script>
+</html>

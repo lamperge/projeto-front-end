@@ -1,0 +1,54 @@
+@charset "UTF-8";
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    text-align: center;
+    margin-top: 200px;
+    background-color: darkolivegreen;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+p.ideia {
+    margin-bottom: 8px;
+    font-style: italic;
+}
+
+input {
+    height: 25px;
+    width: 500px;
+    border: solid 2px;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+button {
+    font-weight: 700;
+    height: 30px;
+    width: 300px;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color:darkgreen;
+    color: white;
+}
+
+.resultado {
+    background-color:greenyellow;
+    font-family: cursive;
+    width: 250px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 8px;
+    border-radius: 20px;
+    padding: 5px;
+}

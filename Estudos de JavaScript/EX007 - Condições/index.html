@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" class="bala">
+    <button class = "b"> vai </button>
+    <div class="res"></div>
+</body>
+<script>
+    var b = document.querySelector ('button.b')
+    b.addEventListener ('click', mais)
+
+    function mais () {
+        var input = document.querySelector ('input.bala')
+        var valordoinput = input.value
+        var res = document.querySelector ('div.res')
+        if (valordoinput >= 343)
+        {res.innerHTML = `Uau`}
+        else {res.innerHTML = 'POXA'}
+    }
+</script>
+</html>
